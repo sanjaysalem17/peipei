@@ -1,10 +1,3 @@
-//
-//  ContentView.swift
-//  peipei
-//
-//  Created by Sanjay Salem on 2/24/24.
-//
-
 import SwiftUI
 import ProximityReader
 
@@ -18,12 +11,17 @@ struct ContentView: View {
     
     var body: some View {
         VStack {
-            Image(systemName: "wallet.pass.fill")
-                .imageScale(Image.Scale.large)
+            Image("peipei")
                 .foregroundStyle(TintShapeStyle.tint)
+                .padding(CGFloat(100.0))
+                .scaleEffect(CGSize(width: 2.0, height: 2.0))
             Text("Peipei")
+                .font(Font.largeTitle)
+                .bold()
+                .underline()
+                .scaleEffect(CGSize(width: 2.0, height: 2.0))
+                .padding(CGFloat(80.0))
         }
-        .padding()
     }
     
     init() {
