@@ -13,15 +13,15 @@ struct ContentView: View {
     var session: PaymentCardReaderSession?
     
     var events: AsyncStream<PaymentCardReader.Event>? {
-        return reader?.events
+        return self.reader?.events
     }
     
     var body: some View {
         VStack {
-            Image(systemName: "globe")
+            Image(systemName: "wallet.pass.fill")
                 .imageScale(Image.Scale.large)
                 .foregroundStyle(TintShapeStyle.tint)
-            Text("Hello, world!")
+            Text("Peipei")
         }
         .padding()
     }
